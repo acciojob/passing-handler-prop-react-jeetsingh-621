@@ -5,6 +5,7 @@ const ColourSelector = (props) => {
   const { background,classname,label } = config;
   return (
     <button className={classname}
+    data-testid={key}
      onClick={() => selectNextBackground({background})}
      style={{backgroundColor:background,
       color:"white",
